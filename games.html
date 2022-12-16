@@ -1,34 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gamer Cafe</title>
-    <!--Links go below here (proper order: )-->
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
-
-    <link rel="stylesheet" href="styles.css">
-</head>
-
-<body>
-    <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-            <div class="row">
-                <div class="col-4 col-sm-3 col-md-2 align-self-center topL">
-                    <a href="index.html"><img src="img/gamerlogo.jpg" class="img-fluid roundImage" /></a>
-                </div>
-                <div class="col">
-                    <h1 class="title text-center">Gamer Cafe</h1> <br>
-                    <h3 class="title-text text-center">WHERE GREAT FOOD MEETS GREATER GAMING</h3>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gamer Cafe</title>
+        <!--Links go below here (proper order: )-->
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4 col-sm-3 col-md-2 align-self-center topL">
+                        <a href="index.html"><img src="img/gamerlogo.jpg" class="img-fluid roundImage" /></a>
+                    </div>
+                    <div class="col">
+                        <h1 class="title text-center">Gamer Cafe</h1> <br>
+                        <h3 class="title-text text-center">WHERE GREAT FOOD MEETS GREATER GAMING</h3>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-
+        
     <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
         <div class="container">
             <a href="#" class="navbar-brand"><img src="img/gamerlogo.jpg" alt="gamer cafe logo" height="50" width="auto"
@@ -38,9 +36,9 @@
             </button>
             <div class="collapse navbar-collapse" id="gamerNavbar">
                 <ul class="navbar-nav">
-                    <li class="nav-item active"><a class="nav-link" href="#"> Home</a>
+                    <li class="nav-item"><a class="nav-link" href="index.html"> Home</a>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="games.html">Games</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="#">Games</a></li>
                     <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
                     <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
                     <li class="nav-item"><a class="nav-link" href="reservation.html">Reservation</a></li>
@@ -51,42 +49,6 @@
 
         </div>
     </nav>
-    <div class="container">
-        <div class="row row-content">
-            <div class="col-sm-4 col-md-3 col-lg-4">
-                <h5>Tavern Party</h5>
-                <p class="card-text">Coming January 15th, 2023:<br>Join us at Gamer Cafe for a night of revelry and joy
-                    as we wade through the depths of Haagenrock, the Land of Fallen Giants.</p>
-                <img class="mainEvent" src="img/event1.jpg" alt="D&D Event: Tavern">
-            </div>
-                <div class="col"></div>
-            <div class="col-sm-4 col-md-3 col-lg-4">
-                <div class="row">
-                    <div class="col">
-                        <p class="">Other Upcoming Events:</p>
-                        <span>Dance Dance Revolution: The Tournament</span>
-                        <img class="otherEventsImg" src="img/dance.jpg" alt="Event: Dancing Tournament">
-                    </div>     
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <span>Drinking and Dragons</span>
-                        <img class="otherEventsImg" src="img/drinkDrag.jfif" alt="Event: Drinking and Dragons">
-                    </div>     
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <span>Race Tournament</span>
-                        <img class="otherEventsImg" src="img/race.jpg" alt="Event: Race Tournament"
-                            style="">
-                    </div>     
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-
 
     <footer>
         <div class="footer">
@@ -95,8 +57,8 @@
                     <div class="col-4 col-sm-2 offset-1">
                         <h5>Links</h5>
                         <ul class="list-unstyled">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="games.html">Games</a></li>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#">Games</a></li>
                             <li><a href="menu.html">Menu</a></li>
                             <li><a href="events.html">Events</a></li>
                             <li><a href="reservation.html">Reservations</a></li>
@@ -125,11 +87,10 @@
         </div>
 
     </footer>
-</body>
-
 <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
 <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
 <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
+</body>
 </html>
