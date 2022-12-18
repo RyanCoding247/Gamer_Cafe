@@ -1,0 +1,102 @@
+.footer {
+    background-image: linear-gradient(lime, black);
+    padding: 20px 0;
+    margin-top: 50px;
+    ;
+}
+
+.jumbotron {
+    background-image: linear-gradient(green, black);
+    color: gold;
+    margin: 0;
+    padding: 30px;
+}
+
+.navbar {
+    background-color: darkgreen;
+    color: black;
+}
+
+.tab-content {
+    border: 1px solid #ddd;
+    border-top: none;
+    padding: 10px;
+}
+
+.jumbotron h3 {
+    color: red;
+}
+
+body {
+    background-image: linear-gradient(green, black);
+}
+
+.topL {
+    left: 0;
+}
+
+.roundImage {
+    border-radius: 50%;
+}
+
+.otherEventsImg {
+    height: 140px;
+    width: 300px;
+    padding-bottom: 20px;
+    padding-top: 5px;
+    object-fit: cover;
+}
+
+.mainEvent {
+    height: 300px;
+    width: 400px;
+    object-fit: cover;
+}
+
+html body .card {
+    border-radius: 15px;
+    padding-bottom: 20px;;
+}
+
+.gameIndex {
+    padding-top: 20px;
+}
+
+.btnStuff {
+    margin-top: 10px;
+}
+
+.highlight {
+    background: yellow;
+    text: green;
+}
+
+.menu {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.menuLeft {
+    border-right: solid 1px;
+}
+
+.subHeader {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.subSubHeader {
+    font-family: 'Libre Baskerville', serif;
+    text-align: center;
+}
+
+.foodItem {
+    font-family: 'Libre Baskerville', serif;
+}
+
+.ingredients {
+    font-family: 'Open Sans', serif;
+    text-align: left;
+}
