@@ -55,7 +55,8 @@ body {
 
 html body .card {
     border-radius: 15px;
-    padding-bottom: 20px;;
+    padding-bottom: 20px;
+    ;
 }
 
 .gameIndex {
@@ -66,9 +67,16 @@ html body .card {
     margin-top: 10px;
 }
 
-.highlight {
+.highlightGF {
     background: yellow;
-    text: green;
+}
+
+.highlightSF {
+    background: aqua;
+}
+
+.highlightDF {
+    background: lightgreen;
 }
 
 .menu {
@@ -90,6 +98,7 @@ html body .card {
 .subSubHeader {
     font-family: 'Libre Baskerville', serif;
     text-align: center;
+    font-size: 18px;
 }
 
 .foodItem {
@@ -99,4 +108,70 @@ html body .card {
 .ingredients {
     font-family: 'Open Sans', serif;
     text-align: left;
+}
+
+#gamerLogo {
+    height: 200px;
+    width: auto;
+    margin-top: 70px;
+    margin-left: -8rem;
+    float: left;
+    position: absolute;
+}
+
+#gamerLogo2 {
+    height: 200px;
+    width: auto;
+    margin-top: 350px;
+    margin-left: -8rem;
+    float: left;
+    position: absolute;
+}
+
+#gamerLogo3 {
+    height: 200px;
+    width: auto;
+    margin-top: 70px;
+    margin-left: 66rem;
+    float: right;
+    position: absolute;
+}
+
+#gamerLogo4 {
+    height: 200px;
+    width: auto;
+    margin-top: 350px;
+    margin-left: 66rem;
+    float: right;
+    position: absolute;
+    object-fit: cover;
+}
+
+.carousel-indicators li {
+    background-color: white;
+    border-color: purple;
+    border-radius: 50%;
+}
+
+.carousel-control-next-icon {
+    background-color: purple;
+}
+
+.carousel-control-prev-icon {
+    background-color: purple;
+}
+
+.eventList {
+    background-image: linear-gradient(gold, green);
+    border-radius: 15px;
+    margin-top: 30px;
+}
+
+#eventListStart {
+    margin-top: 60px;
+}
+
+.carousel-caption {
+    background-color:  rgba(0, 0, 0, 0.5);
+    margin-bottom: 25px;
 }

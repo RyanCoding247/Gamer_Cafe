@@ -9,15 +9,16 @@ $(function() {
         $("#gameCarousel").carousel(2);
     });
     $("#showGF").click(function() {
-        $(".foodItem").children("span").removeClass("highlight");
-        $(".gf").addClass("highlight");
+        $(".foodItem").children("span").removeClass("highlightDF highlightSF");
+        $(".gf").addClass("highlightGF");
     });
     $("#showSF").click(function() {
-        $(".foodItem").children("span").removeClass("highlight");
-        $(".sf").addClass("highlight");
+        $(".foodItem").children("span").removeClass("highlightDF highlightGF");
+        $(".sf").addClass("highlightSF");
     });
     $("#showDF").click(function() {
-        $(".foodItem").children("span").removeClass("highlight");
-        $(".df").addClass("highlight");
+        $(".foodItem").children("span").removeClass("highlightGF highlightSF");
+        $(".df").addClass("highlightDF");
     });
+    $("[data-toggle='tooltip']").tooltip();
 });
