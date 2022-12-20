@@ -31,11 +31,13 @@ body {
     background-image: linear-gradient(green, black);
 }
 
-.topL {
-    left: 0;
+.roundImage {
+    border-radius: 50%;
+    height: 10rem;
+    width: auto;
 }
 
-.roundImage {
+.smallRoundImage {
     border-radius: 50%;
 }
 
@@ -56,7 +58,6 @@ body {
 html body .card {
     border-radius: 15px;
     padding-bottom: 20px;
-    ;
 }
 
 .gameIndex {
@@ -110,43 +111,6 @@ html body .card {
     text-align: left;
 }
 
-#gamerLogo {
-    height: 200px;
-    width: auto;
-    margin-top: 70px;
-    margin-left: -8rem;
-    float: left;
-    position: absolute;
-}
-
-#gamerLogo2 {
-    height: 200px;
-    width: auto;
-    margin-top: 350px;
-    margin-left: -8rem;
-    float: left;
-    position: absolute;
-}
-
-#gamerLogo3 {
-    height: 200px;
-    width: auto;
-    margin-top: 70px;
-    margin-left: 66rem;
-    float: right;
-    position: absolute;
-}
-
-#gamerLogo4 {
-    height: 200px;
-    width: auto;
-    margin-top: 350px;
-    margin-left: 66rem;
-    float: right;
-    position: absolute;
-    object-fit: cover;
-}
-
 .carousel-indicators li {
     background-color: white;
     border-color: purple;
@@ -174,4 +138,22 @@ html body .card {
 .carousel-caption {
     background-color:  rgba(0, 0, 0, 0.5);
     margin-bottom: 25px;
+}
+
+.cardRoom {
+    color: gold;
+}
+
+.bgcard {
+    background-color: rgba(19, 14, 14, 0.5);
+}
+
+.btn-dark {
+    color: red;
+}
+
+.redMSG {
+    background-color: black;
+    border-radius: 10px;
+    padding: 10px;
 }

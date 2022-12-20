@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamer Cafe</title>
+    <!--Links go below here (proper order: )-->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-4 col-sm-3 col-md-2 align-self-center topL">
+                    <a href="index.html"><img src="img/gamerlogo.jpg" class="img-fluid roundImage" /></a>
+                </div>
+                <div class="col">
+                    <h1 class="title text-center">Gamer Cafe</h1> <br>
+                    <h3 class="title-text text-center">WHERE GREAT FOOD MEETS GREATER GAMING</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand"><img src="img/gamerlogo.jpg" alt="gamer cafe logo" height="50" width="auto"
+                    class="smallRoundImage"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#gamerNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="gamerNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html"> Home</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="games.html">Games</a></li>
+                    <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="#">Rooms</a></li>
+                    <li class="nav-item"><a class="nav-link" href="store.html">Store</a></li>
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col text-center">
+                <h1 class="my-3">Select the Room You Wish to Reserve</h1>
+            </div>
+        </div>
+        <div class="row row-content">
+            <div class="col mx-5">
+                <div class="card-deck">
+                    <div class="card bgcard">
+                        <img class="card-img-top img-fluid" src="img/dndroom.jpg" alt="D&D Private Room">
+                        <div class="card-body cardRoom">
+                            <h5 class="card-title">D&D Room</h5>
+                            <p>$5 per hour, max 8 hours</p>
+                            <p class="card-text d-md-block d-sm-none">A private room for your D&D escapades, what more
+                                needs explaining! With 5 rooms available and a max capacity of 10 people each, why
+                                hesitate? Get your room now, cuz you deserve it! For more details, click below.</p>
+                            <br><br>
+                            <button class="btn btn-md btn-dark" id="drButton">Select Room</button>
+                        </div>
+                    </div>
+                    <div class="card bgcard">
+                        <img class="card-img-top img-fluid" src="img/karaoke.jpg" alt="Karaoke Room">
+                        <div class="cardRoom card-body">
+                            <h5 class="card-title">Karaoke Room</h5>
+                            <p>$35 per hour</p>
+                            <p class="card-text d-md-block d-sm-none">With 4 different karaoke rooms, each having enough
+                                capacity for parties of up to 20, it's a guaranteed great time for all ages! You can
+                                pick from thousands of popular songs, adjust the lighting to set your stage, and compete
+                                to see who can score the highest with out Karaoke Dream 3000. Click below for more
+                                details!</p><br>
+                            <button class="btn btn-md btn-dark" id="krButton">Select Room</button>
+                        </div>
+                    </div>
+                    <div class="card bgcard">
+                        <img class="card-img-top img-fluid" src="img/vrsandbox.jpg" alt="VR Sandbox Room">
+                        <div class="card-body cardRoom">
+                            <h5 class="card-title">VR Sandbox</h5>
+                            <p>$30 per person</p>
+                            <p class="card-text d-md-block d-sm-none">Three rooms with built-in VR support technologies
+                                and enough room for up to 8 people. Take on the forces of Mordor with sword and magic,
+                                repulse the zombie hoard with modern weaponry, have a glorious duel with the siths (or
+                                the jedi, we don't judge). With over 20 scenarios to choose from, we guarantee you'll
+                                never get bored! Click below for more details!</p>
+                            <button type="button" class="btn btn-md btn-dark" id="vrButton">Select Room</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col col-sm-2 offset-5 text-center mt-5">
+                <p class="text-danger redMSG">After submitting a reservation request, expect an email response within 24
+                    hours.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="roomModal" class="modal fade" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="eventModalTitle">Reserve a Room</h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col text-center">
+                                <h4 class="eventMI"></h4>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <p>You are about to reserve a <span class="eventMI"></span>. If this is incorrect, click
+                                    anywhere outside of this box to exit and re-select your desired room
+                                    reservation.</span><br><br> Fill out the information below to reserve a
+                                    room:<br><br></p>
+                            </div>
+                        </div>
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-12">
+                                    <label for="eventName">Your Reservation:</label>
+                                    <input type="text" id="eventName" class="form-control  form-control-sm"
+                                        placeholder="" readonly>
+                                </div>
+                                <div class="form-group col-6">
+                                    <label for="attending">Number of People Attending:</label>
+                                    <input type="number" class="form-control form-control-sm" id="attending" min="1" max="99" required>
+                                </div>
+                                <div class="form-group col-12">
+                                    <span>Preferred Date and Time:</span>
+                                </div>
+                                    <div class="form-group col-12">
+                                        <label for="eventDate">Date:</label>
+                                    <input type="date" name="eventDate" id="eventDate" min="2022-12-25" max="2023-12-31" required>
+                                </div>
+                                <div class="form-group col-md-6 col-sm-12">
+                                    <label for="startTime">Start Time:</label>
+                                    <input type="time" name="startTime" id="startTime" step="600" required>
+                                </div>
+                                <label for="endTime">End Time:</label>
+                                <div class="form-group col">
+                                    <input type="time" name="endTime" id="endTime" required>
+                                </div>
+                                </div>
+                                <div class="mt-3">
+                                    <p>Preferred contact method:&nbsp;&nbsp;</p>
+                                </div>
+                                <div class="col mt-2">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="contactBox" id="phoneBox"
+                                            value="phone_preferred" checked>
+                                        <label class="form-check-label" for="phoneBox">
+                                            Phone
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="contactBox" id="emailBox"
+                                            value="email_preferred">
+                                        <label class="form-check-label" for="emailBox">
+                                            Email
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col">
+                                    <label for="eventPhone">Phone: </label>
+                                    <input type="tel" name="phone" id="eventPhone">
+                                </div>
+                                <div class="col">
+                                    <label for="eventMail">Email: </label>
+                                    <input type="email" name="email" id="eventEmail" required>
+                                </div>
+                            </div>
+                            <div class="form-row mt-3">
+                                <button type="button" class="btn btn-secondary btn-sm ml-auto"
+                                    data-dismiss="modal">Cancel</button>
+                                <button type="submit" class="btn btn-primary btn-sm ml-1">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="footer">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-4 col-sm-2 offset-1">
+                        <h5>Links</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="games.html">Games</a></li>
+                            <li><a href="menu.html">Menu</a></li>
+                            <li><a href="events.html">Events</a></li>
+                            <li><a href="#">Rooms</a></li>
+                            <li><a href="store.html">Store</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-sm-5 text-center">
+                        <h5>Social</h5>
+                        <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i
+                                class="fa fa-instagram"></i></a>
+                        <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i
+                                class="fa fa-facebook"></i></a>
+                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i
+                                class="fa fa-twitter"></i></a>
+                        <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i
+                                class="fa fa-youtube"></i></a>
+                    </div>
+                    <div class="col-sm-4 text-center">
+                        <a role="button" class="btn btn-link" href="tel:+12065551234"><i
+                                class="fa fa-phone"></i>1-206-555-1234</a><br />
+                        <a role="button" class="btn btn-link" href="mailto:campsites@nucamp.co"><i
+                                class="fa fa-envelope-o"></i> campsites@nucamp.co</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
