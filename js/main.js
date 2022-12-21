@@ -36,4 +36,24 @@ $(function () {
         $(".eventMI").html("Karaoke Room");
         $("#eventName").attr("placeholder", "Karaoke Room");
     });
+    $("#shopButton1").click(function () {
+        $("#shopModal").modal("toggle");
+        $("#shopImage").attr("src", "img/drinkDrag.jpg");
+        $("#purchaseItem").html("Drinking & Dragons Tee");
+    });
+    $("#shopButton2").click(function () {
+        $("#shopModal").modal("toggle");
+        $("#shopImage").attr("src", "img/gamerlogo.jpg");
+        $("#purchaseItem").html("Gamer Cafe Tee");
+    });
+    $("#shopButton3").click(function () {
+        $("#shopModal").modal("toggle");
+        $("#shopImage").attr("src", "img/dance.jpg");
+        $("#purchaseItem").html("Dance Dance X-Treme Tee");
+    });
+    $("#shopButton4").click(function () {
+        $("#shopModal").modal("toggle");
+        $("#shopImage").attr("src", "img/pacman.jpg");
+        $("#purchaseItem").html("Retro Pac-Man Tee");
+    });
 });
