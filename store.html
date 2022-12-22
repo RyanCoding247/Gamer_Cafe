@@ -16,21 +16,20 @@
 
 <body>
     <div class="jumbotron jumbotron-fluid">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
-                <div class="col-4 col-sm-3 col-md-2 align-self-center topL">
+                <div class="col-sm-3 col-6 topL">
                     <a href="index.html"><img src="img/gamerlogo.jpg" class="img-fluid roundImage" /></a>
                 </div>
-                <div class="col">
+                <div class="col-6 align-self-center">
                     <h1 class="title text-center">Gamer Cafe</h1> <br>
-                    <h3 class="title-text text-center">WHERE GREAT FOOD MEETS GREATER GAMING</h3>
+                    <h3 class="title-text text-center d-none d-sm-block">WHERE GREAT FOOD MEETS GREATER GAMING</h3>
                 </div>
             </div>
         </div>
     </div>
-
     <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
-        <div class="container">
+        <div class="container-fluid">
             <a href="#" class="navbar-brand"><img src="img/gamerlogo.jpg" alt="gamer cafe logo" height="50" width="auto"
                     class="smallRoundImage"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#gamerNavbar">
@@ -51,7 +50,16 @@
 
         </div>
     </nav>
-
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html" class="text-danger">Home</a></li>
+                    <li class="breadcrumb-item">Store</li>
+                </ol>
+            </div>
+        </div>
+    </div>
     <div class="container">
         <div class="row">
             <div class="col mb-5 mt-2 text-center">
@@ -124,7 +132,7 @@
                             </div>
                         </div>
                         <div class="form-group col-6">
-                            <h3  id="purchaseItem">Drinking & Dragons Tee</h3>
+                            <h3 id="purchaseItem">Drinking & Dragons Tee</h3>
                             <div class="row">
                                 <div class="col form-group">
                                     <label for="shirtSize" class="mt-3">Size:</label>
@@ -138,14 +146,14 @@
                                         <option value="XX-Large">XX-Large</option>
                                     </select>
                                 </div>
-                                <div class="col form-group">
-                                    <label for="numShirts">Number of shirts:</label>
+                                <div class="col-6 form-group">
+                                    <label for="numShirts">Quantity:</label>
                                     <input id="numShirts" type="number" min="1" max="99" required>
                                 </div>
-                                <div class="col form-group">
-                                    <label for="colorShirt">Color:</label>
+                                <div class="col-4 form-group">
+                                    <label for="shirtColor">Color:</label>
                                     <select name="Shirt Color" id="shirtColor" required>
-                                        <option value="" disabled selected hidden>--Select a Color--</option>
+                                        <option value="" disabled selected hidden>--Color--</option>
                                         <option value="Red">Red</option>
                                         <option value="Blue">Blue</option>
                                         <option value="Black">Black</option>
@@ -153,6 +161,11 @@
                                         <option value="Navy">Navy</option>
                                         <option value="Gray">Gray</option>
                                     </select>
+                                </div>
+                                <div class="col form-group">
+                                    <label for="shopPrice">Price per Shirt <span class="text-muted">(before
+                                            tax)</span>:</label>
+                                    <input type="text" value="0.00" id="shopPrice" readonly>
                                 </div>
                             </div>
                         </div>
@@ -194,6 +207,67 @@
                         <input type="number" id="shopZip" class="form-control" min="0" max="99999" required>
                     </div>
                 </div>
+                <div class="form-row">
+                    <div class="col mt-4">
+                        <h3 class="modal-title">Payment Details</h3>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col offset-1 form-group">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="paymentType" id="shirtCreditCard"
+                                value="credit_card" checked>
+                            <label class="form-check-label" for="shirtCreditCard">
+                                Credit Card
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="paymentType" id="shirtDebitCard"
+                                value="debit_card">
+                            <label class="form-check-label" for="shirtDebitCard">
+                                Debit Card
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="paymentType" id="shirtPayPal"
+                                value="PayPal">
+                            <label class="form-check-label" for="shirtPayPal">
+                                PayPal
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-5 offset-1 form-group">
+                        <label for="cardName">Name on Card</label>
+                        <input type="text" id="cardName" placeholder="Full Name as Displayed on Card"
+                            class="form-control">
+                    </div>
+                    <div class="col-5 form-group">
+                        <label for="cardNumber">Credit Card Number</label>
+                        <input type="tel" id="cardNumber" inputmode="numeric" pattern="[0-9\s]{13,19}"
+                            autocomplete="cc-number" maxlength="19" placeholder="xxxx xxxx xxxx xxxx"
+                            class="form-control" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-3 offset-1 form-group">
+                        <label for="cardExp">Expiration</label>
+                        <input type="text" id="cardExp" class="form-control" maxlength="5" placeholder="MM/YY"
+                            autocomplete="cc-exp" required>
+                    </div>
+                    <div class="col-3 offset-1 form-group">
+                        <label for="cardCVV">CVV</label>
+                        <input type="text" id="cardCVV" class="form-control" inputmode="numeric" maxlength="3"
+                            autocomplete="cc-csc" pattern="[0-9]{3}" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <button class="btn btn-success">Submit</button>
+                        <button class="btn btn-secondary" data-dismiss="modal" aria-label="close">Cancel</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -201,20 +275,29 @@
 
     <footer>
         <div class="footer">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row">
-                    <div class="col-4 col-sm-2 offset-1">
+                    <div class="offset-1 col-2">
                         <h5>Links</h5>
                         <ul class="list-unstyled">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="games.html">Games</a></li>
-                            <li><a href="menu.html">Menu</a></li>
-                            <li><a href="events.html">Events</a></li>
-                            <li><a href="rooms.html">Rooms</a></li>
-                            <li><a href="#">Store</a></li>
+                            <li><a href="index.html" class="text-danger">Home</a></li>
+                            <li><a href="games.html" class="text-danger">Games</a></li>
+                            <li><a href="menu.html" class="text-danger">Menu</a></li>
+                            <li><a href="events.html" class="text-danger">Events</a></li>
+                            <li><a href="rooms.html" class="text-danger">Rooms</a></li>
+                            <li><a href="#" class="text-danger">Store</a></li>
                         </ul>
                     </div>
-                    <div class="col-6 col-sm-5 text-center">
+                    <div class="col-2 text-center">
+                        <h5>Hours</h5>
+                        <p>Mon-Fri: 11AM - 11PM</p>
+                        <p>Sat-Sun: 10AM - 12AM</p>
+                    </div>
+                    <div class="col-2 text-center">
+                        <h5>Address</h5>
+                        <p><strong>Gamer Cafe, Inc.</strong><br>1234 Inyourheart Blvd<br>Austin, Texas<br>78750</p>
+                    </div>
+                    <div class="col-2 text-center">
                         <h5>Social</h5>
                         <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i
                                 class="fa fa-instagram"></i></a>
@@ -225,11 +308,13 @@
                         <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i
                                 class="fa fa-youtube"></i></a>
                     </div>
-                    <div class="col-sm-4 text-center">
-                        <a role="button" class="btn btn-link" href="tel:+12065551234"><i
-                                class="fa fa-phone"></i>1-206-555-1234</a><br />
-                        <a role="button" class="btn btn-link" href="mailto:campsites@nucamp.co"><i
-                                class="fa fa-envelope-o"></i> campsites@nucamp.co</a>
+                    <div class="col-2 text-center">
+                        <h5>Contact us</h5>
+                        <a role="button" class="btn btn-link text-danger" href="tel:+1234567890"><i
+                                class="fa fa-phone"></i>1-123-456-7890</a><br />
+                        <a role="button" class="btn btn-link text-danger"
+                            href="mailto:!!Not an email address!! Do Not Send!!"><i class="fa fa-envelope-o"></i>
+                            Gamercafe@notadomain.co</a>
                     </div>
                 </div>
             </div>

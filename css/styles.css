@@ -13,7 +13,7 @@
 }
 
 .navbar {
-    background-color: darkgreen;
+    background-color:  rgba(0, 0, 0, 0.5);
     color: black;
 }
 
@@ -185,4 +185,8 @@ html body .card {
 
 #shopModal .modal-content {
     background-color: aqua;
+}
+
+.breadcrumb {
+    background: none;
 }

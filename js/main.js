@@ -40,20 +40,31 @@ $(function () {
         $("#shopModal").modal("toggle");
         $("#shopImage").attr("src", "img/drinkDrag.jpg");
         $("#purchaseItem").html("Drinking & Dragons Tee");
+        $("#shopPrice").val("15.00");
     });
     $("#shopButton2").click(function () {
         $("#shopModal").modal("toggle");
         $("#shopImage").attr("src", "img/gamerlogo.jpg");
         $("#purchaseItem").html("Gamer Cafe Tee");
+        $("#shopPrice").val("12.00");
     });
     $("#shopButton3").click(function () {
         $("#shopModal").modal("toggle");
         $("#shopImage").attr("src", "img/dance.jpg");
         $("#purchaseItem").html("Dance Dance X-Treme Tee");
+        $("#shopPrice").val("15.00");
     });
     $("#shopButton4").click(function () {
         $("#shopModal").modal("toggle");
         $("#shopImage").attr("src", "img/pacman.jpg");
         $("#purchaseItem").html("Retro Pac-Man Tee");
+        $("#shopPrice").val("10.00");
     });
 });
+
+
+// Regular JavaScript goes here
+
+let shopPrice = document.getElementById("shopPrice");
+let shirtQTY = document.getElementById("#numShirts");
+
