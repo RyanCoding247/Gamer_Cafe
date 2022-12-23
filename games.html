@@ -6,12 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gamer Cafe</title>
-    <!--Links go below here (proper order: )-->
+
+    <!-- build:css css/main.css -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
-
     <link rel="stylesheet" href="css/styles.css">
+    <!-- endbuild -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -31,7 +34,7 @@
 
     <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
         <div class="container-fluid">
-            <a href="#" class="navbar-brand"><img src="img/gamerlogo.jpg" alt="gamer cafe logo" height="50" width="auto"
+            <a href="index.html" class="navbar-brand"><img src="img/gamerlogo.jpg" alt="gamer cafe logo" height="50" width="auto"
                     class="smallRoundImage"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#gamerNavbar">
                 <span class="navbar-toggler-icon"></span>
@@ -63,29 +66,29 @@
     </div>
     <div class="container">
         <div class="row">
-            <div class="col col-sm-2 offset-3">
-                <button type="button" id="games1">Classic Games</button>
+            <div class="col col-lg-2 offset-0 offset-sm-3">
+                <button type="button" id="games1" class="btn btn-md btn-success">Classic</button>
             </div>
-            <div class="col col-sm-2">
-                <button type="button" id="games2">Modern Games</button>
+            <div class="col col-lg-2">
+                <button type="button" id="games2" class="btn btn-md btn-success">Modern</button>
             </div>
-            <div class="col col-sm-2">
-                <button type="button" id="games3">Modern Games 2</button>
+            <div class="col col-lg-2">
+                <button type="button" id="games3" class="btn btn-md btn-success">Modern 2</button>
             </div>
         </div>
     </div>
     </div>
 
 
-    <div class="container">
+    <div class="container gamesContainer mt-3">
         <div class="row row-content">
             <div class="col-md-3">
                 <div class="row d-flex flex-column h-100">
                     <div class="col h-100">
-                        <img src="img/pacman.jpg" alt="Pac-Man" class="img-fluid mt-4">
+                        <img src="img/pacman.jpg" alt="Pac-Man" class="img-fluid mt-4 d-none d-md-block" id="gamePic1">
                     </div>
                     <div class="col h-100">
-                        <img src="img/racegame.png" alt="Racing Game" class="img-fluid mt-3">
+                        <img src="img/frogger.jpg" alt="Racing Game" class="img-fluid mt-3 mb-4 d-none d-md-block" id="gamePic2">
                     </div>
                 </div>
             </div>
@@ -96,8 +99,8 @@
                             <div class="container gameIndex">
                                 <div class="row">
                                     <div class="col">
-                                        <div class="card">
-                                            <div class="card-header text-center">
+                                        <div class="card-deck gameCard">
+                                            <div class="card-header">
                                                 <h1>Classic Games</h1>
                                             </div>
                                             <div class="card-body">
@@ -142,8 +145,8 @@
                             <div class="container gameIndex">
                                 <div class="row">
                                     <div class="col">
-                                        <div class="card">
-                                            <div class="card-header text-center">
+                                        <div class="card-deck gameCard">
+                                            <div class="card-header">
                                                 <h1>Modern Games</h1>
                                             </div>
                                             <div class="card-body">
@@ -187,8 +190,8 @@
                             <div class="container gameIndex">
                                 <div class="row">
                                     <div class="col">
-                                        <div class="card">
-                                            <div class="card-header text-center">
+                                        <div class="card-deck gameCard">
+                                            <div class="card-header">
                                                 <h1>Modern Games 2</h1>
                                             </div>
                                             <div class="card-body">
@@ -200,7 +203,7 @@
                                                                 <li class="list-group-item">Foosball</li>
                                                                 <li class="list-group-item">Indoor Basketball</li>
                                                                 <li class="list-group-item">Laser Tag</li>
-                                                                <li class="list-group-item">Pool</li>
+                                                                <li class="list-group-item">Air Hockey</li>
                                                                 <li class="list-group-item">Ping-Pong</li>
                                                                 <li class="list-group-item">Zombie Ball Toss</li>
                                                                 <li class="list-group-item">Water Gun Derby</li>
@@ -235,10 +238,10 @@
             <div class="col-md-3">
             <div class="row d-flex flex-column h-100">
                 <div class="col h-100">
-                    <img src="img/starwarspod.jpg" alt="Star Wars Pod Racer" class="img-fluid mt-4">
+                    <img src="img/dkjr.jpg" alt="Star Wars Pod Racer" class="img-fluid mt-4 d-none d-md-block" id="gamePic3">
                 </div>
                 <div class="col h-100">
-                    <img src="img/vrgolf.jpg" alt="VR Golf" class="img-fluid mt-3">
+                    <img src="img/streetfighter.jpg" alt="VR Golf" class="img-fluid mt-3 mb-4 d-none d-md-block" id="gamePic4">
                 </div>
             </div>
             </div>
@@ -251,7 +254,7 @@
         <div class="footer">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="offset-1 col-2">
+                    <div class="offset-lg-1 offset-0 col-4 col-lg-2 text-center">
                         <h5>Links</h5>
                         <ul class="list-unstyled">
                             <li><a href="index.html" class="text-danger">Home</a></li>
@@ -262,16 +265,24 @@
                             <li><a href="#" class="text-danger">Store</a></li>
                         </ul>
                     </div>
-                    <div class="col-2 text-center">
+                    <div class="col-4 col-lg-2 text-center">
                         <h5>Hours</h5>
-                        <p>Mon-Fri: 11AM - 11PM</p>
-                        <p>Sat-Sun: 10AM - 12AM</p>
+                        <p class="text-danger">Mon-Fri: 11AM - 11PM</p>
+                        <p class="text-danger">Sat-Sun: 10AM - 12AM</p>
                     </div>
-                    <div class="col-2 text-center">
+                    <div class="col-4 col-lg-2 text-center">
                         <h5>Address</h5>
-                        <p><strong>Gamer Cafe, Inc.</strong><br>1234 Inyourheart Blvd<br>Austin, Texas<br>78750</p>
+                        <p class="text-danger"><strong>Gamer Cafe, Inc.</strong><br>1234 Inyourheart Blvd<br>Austin, Texas<br>78750</p>
                     </div>
-                    <div class="col-2 text-center">
+                    <div class="col-6 col-lg-2 text-center">
+                        <h5>Contact us</h5>
+                        <a role="button" class="btn btn-link text-danger" href="tel:+1234567890"><i
+                                class="fa fa-phone"></i>1-123-456-7890</a><br />
+                        <a role="button" class="btn btn-link text-danger"
+                            href="mailto:!!Not an email address!! Do Not Send!!"><i class="fa fa-envelope-o"></i>
+                            Gamercafe@nodomain.co</a>
+                    </div>
+                    <div class="col-6 col-lg-2 text-center">
                         <h5>Social</h5>
                         <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i
                                 class="fa fa-instagram"></i></a>
@@ -279,27 +290,21 @@
                                 class="fa fa-facebook"></i></a>
                         <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i
                                 class="fa fa-twitter"></i></a>
-                        <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i
+                        <a class="btn btn-social-icon btn-google" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><i
                                 class="fa fa-youtube"></i></a>
-                    </div>
-                    <div class="col-2 text-center">
-                        <h5>Contact us</h5>
-                        <a role="button" class="btn btn-link text-danger" href="tel:+1234567890"><i
-                                class="fa fa-phone"></i>1-123-456-7890</a><br />
-                        <a role="button" class="btn btn-link text-danger"
-                            href="mailto:!!Not an email address!! Do Not Send!!"><i class="fa fa-envelope-o"></i>
-                            Gamercafe@notadomain.co</a>
                     </div>
                 </div>
             </div>
         </div>
 
     </footer>
-    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
-    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
+
+<!-- build:js js/main.js -->
+<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="main.js"></script>
+<!-- endbuild -->
 
 </body>
 

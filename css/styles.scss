@@ -1,0 +1,248 @@
+//colors
+$shade: rgba(0, 0, 0, 0.5);
+$shade2: rgba(19, 14, 14, 0.5);
+$meadow: linear-gradient(#000000, #008000);
+$meadow-r: linear-gradient(#008000, #000000);
+$border: 1px black solid;
+$purple: purple;
+$red: #ff0000;
+$pale-red: #dc3545;
+$gold: #ffd700;
+$tan: #d2b48c;
+$black: #000000;
+$white: #ddd;
+$green: #008000;
+$green1: #00ff00;
+$green2: #006400;
+$blue1: #00ffff;
+$yellow: #ffff00;
+
+//features
+$rounded-border: 50%;
+$font-L: 'Libre Baskerville', serif;
+$font-O: 'Open Sans', serif;
+
+
+.footer {
+    background-image: $meadow;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+.footer {
+    color: $pale-red;
+}
+
+.jumbotron {
+    background-image: $meadow-r;
+    color: $gold;
+    margin: 0;
+    padding: 30px;
+}
+
+.navbar {
+    background-color: $shade;
+    color: $black;
+}
+
+.tab-content {
+    border: 1px solid $white;
+    border-top: none;
+    padding: 10px;
+}
+
+.jumbotron {
+    h3 {
+        color: $pale-red;
+    }
+}
+
+body {
+    background-image: linear-gradient($gold, $red);
+}
+
+.roundImage {
+    border-radius: $rounded-border;
+    height: 10rem;
+    width: auto;
+}
+
+.smallRoundImage {
+    border-radius: $rounded-border;
+}
+
+
+.otherEventsImg {
+    height: 140px;
+    width: 300px;
+    padding-bottom: 20px;
+    padding-top: 5px;
+    object-fit: cover;
+}
+
+.mainEvent {
+    height: 300px;
+    width: 400px;
+    object-fit: cover;
+}
+
+.card {
+    border-radius: 15px;
+    padding-bottom: 20px;
+}
+
+.gameIndex {
+    padding-top: 20px;
+}
+
+.gameCard {
+    background-color: none;
+}
+
+.btnStuff {
+    margin-top: 10px;
+}
+
+.highlightGF {
+    background: $yellow;
+}
+
+.highlightSF {
+    background: $blue1;
+}
+
+.highlightDF {
+    background: $green1;
+}
+
+.menu {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: $tan;
+    border: $border;
+    border-radius: 5px;
+}
+
+.menuLeft {
+    border-right: solid 1px;
+}
+
+.subHeader {
+    font-family: $font-L;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.subSubHeader {
+    font-family: $font-L;
+    text-align: center;
+    font-size: 18px;
+}
+
+.foodItem {
+    font-family: $font-L;
+}
+
+.ingredients {
+    font-family: $font-O;
+    text-align: left;
+}
+
+.carousel-indicators {
+    li {
+        background-color: $white;
+        border-color: $purple;
+        border-radius: $rounded-border;
+    }
+}
+
+.carousel-control-next-icon {
+    background-color: $purple;
+}
+
+.carousel-control-prev-icon {
+    background-color: $purple;
+}
+
+.eventList {
+    background-image: linear-gradient($gold, $green);
+    border-radius: 15px;
+    margin-top: 30px;
+}
+
+#eventListStart {
+    margin-top: 60px;
+}
+
+.carousel-caption {
+    background-color: $shade;
+    margin-bottom: 25px;
+}
+
+.gamesContainer {
+    background-color: $shade2;
+    border-radius: 10px;
+    border: $border;
+}
+
+.list-group {
+    .list-group-item {
+        background-color: $shade;
+        color: $pale-red
+    }
+}
+
+.cardRoom {
+    color: $gold;
+}
+
+.bgcard {
+    background-color: $shade2;
+}
+
+.btn-dark {
+    color: $red;
+}
+
+.redMSG {
+    background-color: $black;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.shopCard {
+    background-color: $shade2;
+}
+
+.shopTitle {
+    border: $border;
+    text-shadow: $black;
+    color: $black;
+    padding: 5px;
+    background-color: $green1;
+    border-radius: 5px;
+}
+
+.shopRound {
+    border-radius: 10px;
+}
+
+.btn-dg {
+    background-color: $green2;
+    color: $white;
+}
+
+#shopModal {
+    background-color: $shade2;
+}
+
+#shopModal {
+    .modal-content {
+        background-color: $blue1;
+    }
+}
+
+.breadcrumb {
+    background: none;
+}

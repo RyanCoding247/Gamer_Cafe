@@ -60,11 +60,22 @@ $(function () {
         $("#purchaseItem").html("Retro Pac-Man Tee");
         $("#shopPrice").val("10.00");
     });
+    $("#games1").click(function () {
+        $("#gamePic1").attr("src", "img/pacman.jpg");
+        $("#gamePic2").attr("src", "img/frogger.jpg");
+        $("#gamePic3").attr("src", "img/dkjr.jpg");
+        $("#gamePic4").attr("src", "img/streetfighter.jpg");
+    });
+    $("#games2").click(function () {
+        $("#gamePic1").attr("src", "img/starwarspod.jpg");
+        $("#gamePic2").attr("src", "img/mkart.jpg");
+        $("#gamePic3").attr("src", "img/injustice.jpg");
+        $("#gamePic4").attr("src", "img/vrcoaster.png");
+    });
+    $("#games3").click(function () {
+        $("#gamePic1").attr("src", "img/skeeball.jpg");
+        $("#gamePic2").attr("src", "img/hockey.png");
+        $("#gamePic3").attr("src", "img/vrgolf.jpg");
+        $("#gamePic4").attr("src", "img/race.jpg");
+    });
 });
-
-
-// Regular JavaScript goes here
-
-let shopPrice = document.getElementById("shopPrice");
-let shirtQTY = document.getElementById("#numShirts");
-
